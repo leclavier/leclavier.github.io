@@ -16,12 +16,9 @@
 ### 💻 About Me
 
 - 👨‍💻 I specialize in **Modern UI/UX Design**, turning complex ideas into minimalist, chill, and intuitive interfaces.
-- 🌍 Multilingual logic: Fluent in **Arabic, English, and Turkish**. (**learning French** rn).
+- 🌍 Multilingual logic: Fluent in **Native Arabic & Turkish Speaker,** and **learning French** rn.
 - 🛠️ Creator and maintainer of several custom Discord Bots:
   - 💰 Void. (Economy, Stocks, Market System) 
-  - 🪙 **Barada** (Economy System)
-  - 🛡️ **Yafa** (Moderation)
-  - 🌙 **Luna Moderation** (Utility & Management)
 - 🎓 Future Goal: aiming to study **Political Science & International Relations**.
 - 🎨 Aesthetic: Moonlight, LoFi vibes, Pixel Art.
 
