@@ -16,7 +16,7 @@
 ### 💻 About Me
 
 - 👨‍💻 I specialize in **Modern UI/UX Design**, turning complex ideas into minimalist, chill, and intuitive interfaces.
-- 🌍 Multilingual logic: Fluent in **Native Arabic & Turkish Speaker,** and **learning French** rn.
+- 🌍 Multilingual logic: Fluent in **Native Arabic & Turkish Speaker,** Fluent in **English ** and **learning French** rn.
 - 🛠️ Creator and maintainer of several custom Discord Bots:
   - 💰 Void. (Economy, Stocks, Market System) 
 - 🎓 Future Goal: aiming to study **Political Science & International Relations**.
