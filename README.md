@@ -1,16 +1,21 @@
-## Hi there 👋
+# DarkRoasted | Web Developer Portfolio
 
-<!--
-**leclavier/leclavier** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A highly minimalist, high-level UI/UX personal portfolio for ☥𝑻𝒂𝒏𝒐𝒔 (@madebytanos). Designed with Apple and Spotify's glassmorphism aesthetics in mind, featuring a dynamic void-like canvas background.
 
-Here are some ideas to get you started:
+## File Structure
+- `index.html` - The main structure.
+- `style.css` - Custom glassmorphism styles and layout.
+- `main.js` - Dynamic particle system (void) and API fetchers.
+- `/Assets/`
+  - `PFP.png` (Profile Picture)
+  - `Banner.gif` (Banner Image)
+  - `Crown.png` (Custom Icon)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Features
+- **Zero Contact Info**: Built strictly with privacy and OSINT-protection in mind.
+- **Glassmorphism UI**: High-end blur effects with subtle red accents.
+- **Interactive Void Background**: A custom JavaScript particle system simulating deep space/stars.
+- **Discord Integration**: Live widget for the Athena community.
+
+## Deployment
+No build tools required. Simply upload all files to GitHub and enable **GitHub Pages** targeting the root directory.
