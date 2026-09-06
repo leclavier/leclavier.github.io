@@ -1,8 +1,4 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=7b96ff&height=250&section=header&text=Hi,%20I'm%20Gateau%20(leclavier)&fontSize=50&fontColor=ffffff&animation=fadeIn" alt="Header" />
-</div>
-
-<div align="center">
   <h3>✨ Self-Taught Web Developer ✨</h3>
   <p>Building pixel-perfect UI/UX, maintaining Discord bots, and thriving on coffee & mate ☕🧉</p>
   
