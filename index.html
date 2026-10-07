@@ -1,116 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>- 𝑻𝒂𝒏𝒐𝒔 | تـــانـــوس -</title>
+    <title>Gateau</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
+
 <body>
-    <canvas id="ambient-canvas"></canvas>
+    <div class="background-glow"></div>
+
+    <div class="banner-bg">
+        <img src="Assets/Banner.png" alt="Banner">
+        <div class="banner-overlay"></div>
+    </div>
+
+    <nav class="navbar animate-fade-in">
+        <div class="nav-content">
+            <span class="logo">Gateau.</span>
+
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#stack" class="nav-link">Stack</a>
+                <a href="#work" class="nav-link">Work</a>
+            </div>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn">
+                    <i class='bx bx-sun' id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <main class="container">
-        <section class="bubble profile-bubble interact-card fade-in">
-            <div class="banner-wrapper">
-                <img src="./Assets/BANNER.png" alt="Banner" class="banner-img" onerror="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='">
-                <div class="banner-fade"></div>
-            </div>
-            
-            <div class="profile-content">
-                <div class="avatar-wrapper">
-                    <img src="./Assets/PFP.png" alt="☥𝑻𝒂𝒏𝒐𝒔" class="avatar-img" onerror="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='">
-                    <div class="crown-badge">
-                        <img src="./Assets/Crown.png" alt="Crown" onerror="this.style.display='none'">
+        <section id="about" class="profile-card animate-slide-up">
+            <div class="profile-layout">
+                <div class="avatar-col">
+                    <div class="avatar-container">
+                        <img src="Assets/Avatar.png" alt="Avatar" class="avatar">
+                        <div class="status-dot">☕</div>
                     </div>
                 </div>
-                
-                <h1 class="display-name scramble-text" data-value="Tanos">Tanos</h1>
-                <h2 class="username">@madebytanos</h2>
-                
-                <p class="bio">
-                    Architecting smooth digital experiences and robust backend systems. Driven by logic, minimal by design.
-                </p>
+                <div class="info-col">
+                    <h1 class="name">Gateau</h1>
+                    <p class="tagline">UI/UX & Backend Developer</p>
+
+                    <div class="stats-row">
+                        <div class="stat-badge"><i class='bx bx-map'></i> Global</div>
+                        <div class="stat-badge"><i class='bx bx-code-alt'></i> Self-Taught</div>
+                        <div class="stat-badge"><i class='bx bx-coffee-togo'></i> Powered by Yerba Mate</div>
+                    </div>
+
+                    <div class="about-me">
+                        <p>
+                            I develop web applications and backend systems with a strong emphasis on minimalist UI
+                            design and functional architecture. I keep codebases clean, scalable and free of unnecessary
+                            complexity.
+                        </p>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="https://github.com/leclavier" target="_blank" class="btn">
+                            <i class='bx bxl-github'></i> @leclavier
+                        </a>
+                        <a href="mailto:legateau@proton.me" class="btn btn-primary">
+                            <i class='bx bx-envelope'></i> legateau@proton.me
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <div class="grid-layout">
-            <section class="bubble fade-in" style="transition-delay: 0.1s;">
-                <h3 class="section-heading"><i class="ph-fill ph-stack"></i> Core Stack</h3>
-                <div class="skills-container">
-                    <div class="skill-pill">
-                        <i class="ph-fill ph-file-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-pill">
-                        <i class="ph-fill ph-hexagon"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="skill-pill">
-                        <i class="ph-fill ph-terminal-window"></i>
-                        <span>Express</span>
-                    </div>
-                    <div class="skill-pill">
-                        <i class="ph-fill ph-wind"></i>
-                        <span>Tailwind</span>
-                    </div>
-                    <div class="skill-pill">
-                        <i class="ph-fill ph-database"></i>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bubble fade-in" style="transition-delay: 0.2s;">
-                <h3 class="section-heading"><i class="ph-fill ph-cpu"></i> Philosophy</h3>
-                <p class="philosophy-text">
-                    I believe in building systems that are as beautiful under the hood as they are on the surface. Security, optimization, and seamless UI/UX are not optional; they are the foundation of any digital architecture.
-                </p>
-                <div class="waveform-container">
-                    <canvas id="spotify-wave-canvas"></canvas>
-                </div>
-            </section>
-        </div>
-
-        <section class="bubble luna-section fade-in" style="transition-delay: 0.3s;">
-            <div class="luna-banner-wrapper">
-                <img src="Assets/Luna Banner.png" alt="Luna Banner" class="luna-banner">
-                <div class="luna-banner-fade"></div>
-                <div class="luna-logo-wrapper">
-                    <img src="/Assets/Luna Logo.png" alt="Luna Logo" class="luna-logo">
-                </div>
+        <section id="stack" class="stack-section reveal">
+            <h2><i class='bx bx-layer'></i> Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-icon-item"><i class="devicon-html5-plain"></i></div>
+                <div class="stack-icon-item"><i class="devicon-css3-plain"></i></div>
+                <div class="stack-icon-item"><i class="devicon-javascript-plain"></i></div>
+                <div class="stack-icon-item"><i class="devicon-nodejs-plain"></i></div>
+                <div class="stack-icon-item"><i class='bx bxl-discord-alt'></i></div>
+                <div class="stack-icon-item"><i class="devicon-tailwindcss-original"></i></div>
+                <div class="stack-icon-item"><i class="devicon-mongodb-plain"></i></div>
             </div>
-            
-            <div class="luna-content">
-                <div class="luna-header-row">
-                    <div class="luna-titles">
-                        <div class="luna-title-wrap">
-                            <i class="ph-fill ph-moon-stars luna-icon"></i>
-                            <h3 class="luna-title scramble-text" data-value="Luna">Luna</h3>
+        </section>
+
+        <section id="work" class="projects-section reveal">
+            <h2><i class='bx bx-code-block'></i> Selected Work</h2>
+
+            <div class="project-card">
+                <div class="project-banner">
+                    <img src="Assets/Vero-Banner.png" alt="VERO">
+                    <div class="banner-gradient"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <img src="Assets/Vero-Logo.png" alt="VERO Logo" class="project-logo">
+                        <div class="project-titles">
+                            <h3>VERO</h3>
+                            <a href="https://github.com/verointels" target="_blank" class="project-link">@verointels</a>
                         </div>
-                        <h4 class="luna-slogan">Where Knowledge Meets The Night</h4>
                     </div>
-                    <span class="luna-exclusive-tag">
-                        <i class="ph-fill ph-planet"></i> Mega-Community
-                    </span>
-                </div>
-                
-                <p class="luna-desc">
-                    Step into Luna—a sanctuary for meaningful discourse, shared knowledge, and deep connections. Whether you're here to learn, collaborate, or simply unwind, you'll find a dedicated space to grow alongside like-minded individuals.
-                </p>
-                
-                <div class="luna-tags">
-                    <div class="luna-tag"><i class="ph-fill ph-bowling-ball"></i> Activities</div>
-                    <div class="luna-tag"><i class="ph-fill ph-heart"></i> Community</div>
-                    <div class="luna-tag"><i class="ph-fill ph-trophy"></i> Events</div>
-                    <div class="luna-tag"><i class="ph-fill ph-music-notes"></i> Music</div>
-                    <div class="luna-tag"><i class="ph-fill ph-coffee"></i> Chill</div>
-                </div>
-                <div class="luna-cta">
-                    <a href="https://discord.gg/XRw3apdjnx" target="_blank" class="luna-join-btn">
-                        <i class="ph-fill ph-moon"></i> Join the Community
-                    </a>
+
+                    <p class="project-desc">
+                        Modern web interface and intelligent systems designed with a minimalist and scalable approach.
+                        Providing high-end data visualization and seamless user experience.
+                    </p>
+
+                    <div class="project-metrics">
+                        <span><i class='bx bx-server'></i> Fast</span>
+                        <span><i class='bx bx-shield-quarter'></i> Secure</span>
+                        <span><i class='bx bx-desktop'></i> Responsive</span>
+                    </div>
+
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <a href="https://veropol.onrender.com/" target="_blank" class="btn btn-primary">
+                            <i class='bx bx-link-external'></i> Visit VERO
+                        </a>
+                        <a href="mailto:veropol@proton.me" class="btn">
+                            <i class='bx bx-envelope'></i> veropol@proton.me
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,4 +140,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
